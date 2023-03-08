@@ -9,7 +9,9 @@ const TrendingAsset: React.FC<trendingAssetData> = ({trendingAsset} : trendingAs
     
     
     return (
-        <></>
+        <section>
+            <img src={trendingAsset.assetImage} width="40px" />
+        </section>
     )
 }
 
