@@ -51,7 +51,6 @@ html, body {
     top: 25px
 }
 .filler-div1, .filler-div2 {
-    background-color: wheat;
     position: relative;
     background-color: rgba(98, 106, 136);
     opacity: 0.1;
