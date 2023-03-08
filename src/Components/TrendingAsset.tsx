@@ -11,8 +11,8 @@ const TrendingAsset: React.FC<trendingAssetData> = ({trendingAsset} : trendingAs
     
     return (
         <section>
-            <div className="w-[80px] h-[20px] rounded-t-[40px] filler-div1"></div>
-            <div className="w-[80px] h-[20px] rounded-t-[40px] filler-div2"></div>
+            <div className="w-[82px] h-[20px] rounded-t-[40px] filler-div1"></div>
+            <div className="w-[82px] h-[20px] rounded-t-[40px] filler-div2"></div>
 
 
             <div className="flex justify-center items-center w-[100px] h-[100px] rounded-[50px] bg-[#14172B] logo-div">
