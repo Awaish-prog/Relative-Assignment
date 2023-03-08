@@ -12,6 +12,7 @@ export interface trendingAsset {
     assetName: string,
     assetPrice : string,
     assetPriceVariation: string,
+    assetPriceVC: string,
     assetTVL: string,
     assetPairs: Array<string>
 }
@@ -24,6 +25,7 @@ const TrendingAssets: React.FC = () : JSX.Element => {
             assetName: "Bitcoin (BTC)",
             assetPrice : "$31,812.80",
             assetPriceVariation: "+10%",
+            assetPriceVC: "text-[#00FFA3]",
             assetTVL: "$60,000",
             assetPairs: [solanaLogo, ethereumLogo, binanceLogo]
         },
@@ -32,6 +34,7 @@ const TrendingAssets: React.FC = () : JSX.Element => {
             assetName: "Solana (SOL)",
             assetPrice : "$32.83",
             assetPriceVariation: "-12.32%",
+            assetPriceVC: "text-[#FF4D4D]",
             assetTVL: "$60,000",
             assetPairs: [bitcoinLogo, ethereumLogo, binanceLogo]
         },
@@ -40,6 +43,7 @@ const TrendingAssets: React.FC = () : JSX.Element => {
             assetName: "Ethereum (ETH)",
             assetPrice : "$1,466.45",
             assetPriceVariation: "-11.93%",
+            assetPriceVC: "text-[#FF4D4D]",
             assetTVL: "$60,000",
             assetPairs: [solanaLogo, bitcoinLogo, binanceLogo]
         },
@@ -48,6 +52,7 @@ const TrendingAssets: React.FC = () : JSX.Element => {
             assetName: "Binance USD (BUSD)",
             assetPrice : "$1.00",
             assetPriceVariation: "+0.26%",
+            assetPriceVC: "text-[#00FFA3]",
             assetTVL: "$60,000",
             assetPairs: [solanaLogo, bitcoinLogo, binanceLogo]
         },
@@ -56,6 +61,7 @@ const TrendingAssets: React.FC = () : JSX.Element => {
             assetName: "Shiba Inu (SHIB)",
             assetPrice : "$0.00000001948",
             assetPriceVariation: "-8.1%",
+            assetPriceVC: "text-[#FF4D4D]",
             assetTVL: "$60,000",
             assetPairs: [solanaLogo, ethereumLogo, binanceLogo]
         }
@@ -66,7 +72,7 @@ const TrendingAssets: React.FC = () : JSX.Element => {
                 <img src = {trendingAssetLogo} alt = "No Logo" width="20px"/>
                 <span className="text-[#ECF0FF]">Trending Assets</span>
             </div>
-            <div>
+            <div className="flex gap-5 justify-around flex-wrap">
             {
                 trendingAssetsData.map((trendingAsset, index) => {
                     return <TrendingAsset trendingAsset = {trendingAsset} key={index} />
