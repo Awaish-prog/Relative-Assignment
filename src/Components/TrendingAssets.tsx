@@ -59,7 +59,7 @@ const TrendingAssets: React.FC = () : JSX.Element => {
             assetPriceVariation: "+0.26%",
             assetPriceVC: "text-[#00FFA3]",
             assetTVL: "$60,000",
-            assetPairs: [[solanaLogo, "solana"], [bitcoinLogo, "bitcoin"], [binanceLogo, "binance"]]
+            assetPairs: [[solanaLogo, "solana"], [ethereumLogo, "ethereum"], [binanceLogo, "binance"]]
         },
         {
             assetImage: shibaLogo,
